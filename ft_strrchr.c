@@ -6,9 +6,11 @@
 /*   By: abrandao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 15:46:48 by abrandao          #+#    #+#             */
-/*   Updated: 2026/04/15 15:21:21 by abrandao         ###   ########.fr       */
+/*   Updated: 2026/04/27 14:44:53 by abrandao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -27,12 +29,10 @@ char	*ft_strrchr(const char *s, int c)
 		}
 		i--;
 	}
-	return (0);
+	return (NULL);
 }
 
-//strchr mas a comecar do fim
-/*#include "libft.h"
-int	main(void)
+/*int	main(void)
 {
 	char *s = "Hello World!";
 

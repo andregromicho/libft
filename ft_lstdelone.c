@@ -14,15 +14,17 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
+	if (!lst)
+		return ;
 	del(lst->content);
 	free(lst);
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	t_list	*list;
 	
 	list = ft_lstnew(malloc(5));
 	ft_lstdelone(list, free);
-}*/
+} */
 //valgrind

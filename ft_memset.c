@@ -29,10 +29,11 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	char	str[20] = "Hello world";
 
 	ft_memset(str, 'c', 20);
+	str[19] = '\0';
 	printf("%s\n", str);
-}*/
+} */

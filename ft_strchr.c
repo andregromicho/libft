@@ -6,9 +6,11 @@
 /*   By: abrandao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 15:29:57 by abrandao          #+#    #+#             */
-/*   Updated: 2026/04/15 15:19:23 by abrandao         ###   ########.fr       */
+/*   Updated: 2026/04/27 14:44:14 by abrandao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -23,11 +25,10 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if (s[i] == (char)c)
 		return ((char *)(s + i));
-	return (0);
+	return (NULL);
 }
 
-/*#include "libft.h"
-int	main(void)
+/*int	main(void)
 {
 	char *s = "Hello World!";
 

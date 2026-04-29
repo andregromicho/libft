@@ -160,6 +160,3 @@ cc main.c libft.a -o program
 
 This project builds a strong foundation in C programming and prepares for future projects by creating a reusable personal library.
 
-
-Function,Prototype,Description
-

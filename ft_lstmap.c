@@ -19,7 +19,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	void	*content;
 
 	new_list = NULL;
-	if (!lst || !f || !del)
+	if (!lst)
 		return (NULL);
 	while (lst != NULL)
 	{
@@ -76,9 +76,4 @@ int	main(void)
 	}
 	ft_lstclear(&list, free);
 	ft_lstclear(&list2, free);
-}
- */
-/* cc -Wall -Wextra -Werror ft_lstmap.c ft_lstnew.c 
-ft_lstadd_back.c ft_lstclear.c ft_strdup.c ft_lstlast.c 
-ft_lstdelone.c ft_strlen.c ft_strlcpy.c
- */
+}*/

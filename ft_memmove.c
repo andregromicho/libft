@@ -38,7 +38,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-//memmove com mais de 25linhas
+
 /*int	main(void)
 {
 	char *src = "Hellow World!";

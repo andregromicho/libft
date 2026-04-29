@@ -15,9 +15,7 @@
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
-
-	if (!lst || !new)
-		return ;
+	
 	if (*lst == NULL)
 	{
 		*lst = new;
@@ -51,7 +49,5 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		printf("%s",(char *) temp->content);
 		temp = temp->next;
 	}
-	free (first);
-	free(second);
-	free(last);
+	ft_lstclear(&list, free);
 } */

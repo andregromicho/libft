@@ -34,4 +34,4 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char *s2 = " World!";
 	printf("%s\n", ft_strjoin(s1, s2));
 } */
-//cc ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strjoin.c
+

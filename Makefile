@@ -16,14 +16,13 @@ FLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 RM = rm -f
 
+all: $(NAME)
+
 %.o: %.c
-	$(CC) $(FLAGS) -c $<
+	$(CC) $(FLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $^
-
-all: $(NAME)
-
 
 clean:
 	$(RM) $(OBJS)

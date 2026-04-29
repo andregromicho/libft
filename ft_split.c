@@ -88,3 +88,18 @@ char	**ft_split(char const *s, char c)
 	}
 	return (res);
 }
+
+/* #include <stdio.h>
+
+int	main(void)
+{
+	char **res = ft_split("Hello World ! ", ' ');
+	int i = 0;
+	while (res[i])
+	{
+    	printf("%s\n", res[i]);
+		free(res[i]);
+    	i++;
+	}
+	free(res);
+} */

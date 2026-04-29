@@ -17,23 +17,27 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*ptr;
 	size_t	total_size;
 
+	if (nmemb != 0 && size > ((size_t)-1) / nmemb)
+		return (NULL);
 	total_size = nmemb * size;
 	ptr = malloc(total_size);
 	if (!ptr)
-		return (0);
+		return (NULL);
 	ft_bzero(ptr, total_size);
 	return (ptr);
 }
 
-/*int	main(void)
+/* #include <stdio.h>
+int	main(void)
 {
 	int	i;
 	int *s = (int *)ft_calloc(8, sizeof(int));
 	i = 0;
 	while (i < 8)
 	{
-		printf("%i", s[i]);
+		printf("%i ", s[i]);
 		i++;
 	}
 	free(s);
-}*/
+}
+ */
